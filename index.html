@@ -1,153 +1,63 @@
-/* General Styles */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to bottom, #f0f8ff, #e6e6fa);
-  color: #333;
-  line-height: 1.6;
-  overflow-x: hidden;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elite Passage | Your Journey Begins Here</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-h1, h2, h3 {
-  text-align: center;
-  margin: 0.5em 0;
-}
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">Elite Passage</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+    </ul>
+  </div>
+</nav>
 
-p {
-  text-align: center;
-  margin: 0.5em 0;
-}
+<!-- Hero Section -->
+<header class="hero">
+  <img src="assets/images/LOGO_ProjectC.png" alt="Elite Passage Logo" class="logo" style="max-width: 150px; margin-bottom: 1rem; z-index:1;">
+  <h1>Your Journey Begins Here</h1>
+  <p>Luxury travel experiences crafted uniquely for you.</p>
+</header>
 
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 2em 1em;
-  background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
-  color: white;
-  animation: fadeIn 2s ease-in-out;
-}
+<!-- Travel Packages Section -->
+<section class="packages">
+  <h2 class="section-title">Travel Packages</h2>
+  <div class="package-list">
+    <div class="package">
+      <h3>1-Week Getaway – "The Taste of Escape"</h3>
+      <p>6 nights in 4–5 star accommodations, curated experiences, and private transfers.</p>
+    </div>
+    <div class="package">
+      <h3>2-Week Immersion – "The Cultural Soak"</h3>
+      <p>13 nights of deep cultural adventures, gourmet dining, and enrichment activities.</p>
+    </div>
+    <div class="package">
+      <h3>1-Month Retreat – "Live the Destination"</h3>
+      <p>28 nights living like a local with luxury and immersion at its finest.</p>
+    </div>
+  </div>
+</section>
 
-.hero .logo {
-  width: 150px;
-  animation: slideDown 1.5s ease-in-out;
-}
+<!-- Special Promotion Section -->
+<section class="promo">
+  <div class="promo-card">
+    <h2>Special Promotion</h2>
+    <p><strong>Early Bird Offer:</strong> Book 3 months in advance and save up to 15%!</p>
+  </div>
+</section>
 
-.hero h1 {
-  font-size: 2.5em;
-  margin-top: 0.5em;
-  animation: fadeInUp 2s ease-in-out;
-}
+<!-- Footer -->
+<footer>
+  <p>Elite Passage © 2025 - Crafted with love for travelers.</p>
+</footer>
 
-.hero p {
-  font-size: 1.2em;
-  animation: fadeInUp 2.5s ease-in-out;
-}
-
-/* Packages Section */
-.packages {
-  padding: 2em 1em;
-  background: #fff;
-}
-
-.package-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5em;
-}
-
-.package {
-  background: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  width: 300px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.package:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Destinations Section */
-.destinations {
-  padding: 2em 1em;
-  background: #e6e6fa;
-}
-
-.destination-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5em;
-}
-
-.destination {
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.destination img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.destination:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Promo Section */
-.promo {
-  padding: 2em 1em;
-  background: #ffefd5;
-  text-align: center;
-  animation: fadeIn 2s ease-in-out;
-}
-
-.promo strong {
-  color: #d2691e;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1em;
-  background: #333;
-  color: white;
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+</body>
+</html>
